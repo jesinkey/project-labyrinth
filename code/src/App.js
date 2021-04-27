@@ -15,6 +15,8 @@ const reducer = combineReducers ({
   // ui: ui.reducer,
 })
 
+// TEST
+
 const store = configureStore({reducer})
 
 export const App = () => {
