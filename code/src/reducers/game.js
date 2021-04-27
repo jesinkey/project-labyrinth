@@ -10,17 +10,17 @@ const fetchInitStart = {
     body: JSON.stringify({ username: 'MaHal1' }),
   };
 
-  const fetchInitNext = {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ 
-        username: 'MaHal1',
-        type: '',
-        direction: ''
-    }),
-  };
+//   const fetchInitNext = {
+//     method: 'POST',
+//     headers: {
+//         'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify({ 
+//         username: 'MaHal1',
+//         type: '',
+//         direction: ''
+//     }),
+//   };
 
 export const game = createSlice({
     name: 'game',
@@ -64,16 +64,16 @@ export const fetchStart = () => {
     }
 }
 
-export const fetchNext = () => {
-    return (dispatch, getState) => {
-        fetch('https://wk16-backend.herokuapp.com/action', fetchInitNext)
-            .then(res => res.json())
-            .then(json => {
-                console.log(json)
-                dispatch(game.actions.setDescription(json.description))
-                dispatch(game.actions.setCoordinates(json.coordinates))
-                dispatch(game.actions.setActions(json.actions[0]))
-            })
-    }
-}
+// export const fetchNext = () => {
+//     return (dispatch, getState) => {
+//         fetch('https://wk16-backend.herokuapp.com/action', fetchInitNext)
+//             .then(res => res.json())
+//             .then(json => {
+//                 console.log(json)
+//                 dispatch(game.actions.setDescription(json.description))
+//                 dispatch(game.actions.setCoordinates(json.coordinates))
+//                 dispatch(game.actions.setActions(json.actions[0]))
+//             })
+//     }
+// }
 

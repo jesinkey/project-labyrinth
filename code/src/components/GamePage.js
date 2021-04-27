@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux' 
-import { fetchNext } from 'reducers/game'
+// import { fetchNext } from 'reducers/game'
 
 
 export const GamePage = () => {
@@ -15,10 +15,10 @@ export const GamePage = () => {
         <h2>{descriptionText}</h2>
         <p>{coordinates}</p>
         <p>{actionsObject.description}</p>
-        <button
+        {/* <button
           onClick={() => dispatch(fetchNext(actionsObject.direction))}>  
             <h2> Go {actionsObject.direction}</h2>
-        </button>
+        </button> */}
         </div>
     )
 }

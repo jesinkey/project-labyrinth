@@ -15,8 +15,6 @@ const reducer = combineReducers ({
   // ui: ui.reducer,
 })
 
-// TEST TEST TEXT
-
 const store = configureStore({reducer})
 
 export const App = () => {
@@ -29,9 +27,9 @@ export const App = () => {
             <Route path='/' exact>
               <StartPage />
             </Route>
-            <Route path='/GamePage/'>
+            {/* <Route path='/GamePage/'>
               <GamePage />
-            </Route>
+            </Route> */}
           </Switch>
         </BrowserRouter>
       </Provider>
