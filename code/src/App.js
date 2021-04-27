@@ -15,7 +15,7 @@ const reducer = combineReducers ({
   // ui: ui.reducer,
 })
 
-// TEST
+// TEST TEST TEXT
 
 const store = configureStore({reducer})
 
